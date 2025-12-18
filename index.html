@@ -3,143 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions de Service et Politique de Confidentialité - CooApp</title>
+    <title>CONTRAT GLOBAL DE SERVICE ET CONFIDENTIALITÉ - COOAPP</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 30px; background-color: #f4f7f6; }
-        .container { background: white; padding: 50px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .legal-header { background: #1a3a5a; color: white; padding: 25px; border-radius: 4px; text-align: center; margin-bottom: 30px; border: 2px solid #0d263d; }
-        .legal-header h1 { margin: 0; font-size: 1.5em; text-transform: uppercase; }
-        .warning-banner { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 15px; margin-bottom: 20px; font-weight: bold; font-size: 0.9em; }
-        h2 { color: #1a3a5a; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; text-transform: uppercase; font-size: 1.2em; }
-        h3 { color: #2c3e50; font-size: 1.1em; }
-        .summary-box { background: #f8f9fa; border-left: 5px solid #1a3a5a; padding: 20px; margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.85em; }
-        table, th, td { border: 1px solid #dee2e6; padding: 12px; text-align: left; }
-        th { background: #f1f3f5; font-weight: bold; }
-        .clause-title { font-weight: bold; color: #c0392b; }
-        .lang-switch { display: flex; justify-content: flex-end; gap: 15px; font-weight: bold; margin-bottom: 10px; }
-        .lang-switch a { text-decoration: none; color: #007bff; }
-        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; font-size: 0.8em; color: #777; }
+        [data-custom-class='body'] { background: #ffffff !important; font-family: 'Times New Roman', Times, serif; color: #1a1a1a; padding: 50px; line-height: 1.4; text-align: justify; }
+        .legal-red-banner { border: 5px solid #ce1126; background: #000; color: #fff; padding: 30px; text-align: center; font-weight: bold; font-size: 18px; text-transform: uppercase; margin-bottom: 40px; }
+        h1 { font-size: 24px; text-align: center; text-transform: uppercase; border-bottom: 3px solid #000; padding-bottom: 10px; margin-bottom: 30px; }
+        h2 { font-size: 18px; text-transform: uppercase; background: #eee; padding: 10px; margin-top: 40px; border: 1px solid #000; }
+        h3 { font-size: 16px; margin-top: 25px; font-style: italic; border-bottom: 1px solid #ccc; }
+        .clause-warning { color: #ce1126; font-weight: bold; text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 12px; }
+        th, td { border: 1px solid #000; padding: 10px; vertical-align: top; }
+        th { background: #f0f0f0; }
+        .bilingual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .page-break { margin: 50px 0; border-top: 2px dashed #000; }
+        footer { margin-top: 100px; border-top: 5px solid #000; padding-top: 20px; text-align: center; font-weight: bold; }
     </style>
 </head>
-<body>
+<body data-custom-class="body">
 
-<div class="container">
-    <div class="lang-switch">
-        <a href="#english">English Version</a>
+    <div class="legal-red-banner">
+        NOTICE JURIDIQUE D'ACCEPTATION OBLIGATOIRE / LEGAL NOTICE OF BINDING ACCEPTANCE
     </div>
 
-    <div class="legal-header">
-        <h1>AVIS JURIDIQUE D'ACCEPTATION OBLIGATOIRE</h1>
-        <p style="margin-top:10px; font-size: 0.9em;">
-            L'utilisation continue de cette application, qu'elle soit lue ou non, ainsi que le clic sur le bouton "Accepter", constitue une acceptation irrévocable, volontaire et contraignante de toutes les clauses décrites ici.
-        </p>
+    <div class="bilingual-grid">
+        <div>
+            <p><strong>FRANÇAIS:</strong> L'utilisation continue de cette application, qu'elle soit lue ou non, ainsi que l'action de cliquer sur le bouton <strong>"ACCEPTER LES TERMES ET SERVICES"</strong>, constitue une acceptation irrévocable, volontaire et juridiquement contraignante de toutes les clauses. Si vous n'acceptez pas, vous devez désinstaller le logiciel immédiatement.</p>
+        </div>
+        <div>
+            <p><strong>ENGLISH:</strong> Continued use of this application, whether read or not, and the act of clicking the <strong>"ACCEPT TERMS AND SERVICES"</strong> button, constitutes irrevocable, voluntary, and binding acceptance of all clauses described herein. If you disagree, uninstall the software immediately.</p>
+        </div>
     </div>
 
-    <div class="warning-banner">
-        SI VOUS N'ACCEPTEZ PAS CES TERMES, DÉSINSTALLEZ LE LOGICIEL IMMÉDIATEMENT.
-    </div>
-
-    <section id="french">
-        <h1>POLITIQUE DE CONFIDENTIALITÉ ET CONDITIONS (QUÉBEC)</h1>
-        <p><strong>Dernière mise à jour :</strong> 18 Décembre 2025</p>
-
-        <div class="summary-box">
-            <strong>RÉSUMÉ DES POINTS CRITIQUES</strong>
+    <h1>1. PROPRIÉTÉ INTELLECTUELLE / INTELLECTUAL PROPERTY</h1>
+    <div class="bilingual-grid">
+        <div>
+            <p>L'application CooApp, son code source, son architecture P2P, sa logique SQLite et ses algorithmes sont la <strong>propriété exclusive et perpétuelle du Développeur</strong>.</p>
             <ul>
-                <li><strong>Exonération de responsabilité physique :</strong> Zéro risque pour le développeur en cas d'accident, de blessure ou de décès.</li>
-                <li><strong>Propriété :</strong> Le code source et l'architecture sont la propriété exclusive du développeur.</li>
-                <li><strong>Données :</strong> Modèle P2P décentralisé ; la Coopérative est le responsable légal des données.</li>
-                <li><strong>Modèle Hybride :</strong> Fonctions de base gratuites ; modules de sauvegarde et rapports premium payants.</li>
+                <li><strong>Secret Commercial:</strong> La structure de données est un secret protégé.</li>
+                <li><strong>Prohibitions:</strong> L'ingénierie inverse, la copie ou l'extraction de code sont passibles de poursuites criminelles.</li>
             </ul>
         </div>
-
-        <h2>1. PROPRIÉTÉ INTELLECTUELLE ET PROTECTION DU CODE</h2>
-        <p>L'application <strong>CooApp</strong>, incluant son code source, son architecture de synchronisation P2P, sa logique SQLite et ses algorithmes, est la propriété exclusive et perpétuelle du Développeur.</p>
-        <ul>
-            <li><strong>Licence :</strong> Licence d'usage limitée et révocable.</li>
-            <li><strong>Secret Commercial :</strong> La structure de la base de données est un secret commercial protégé.</li>
-            <li><strong>Interdictions :</strong> La copie, l'ingénierie inverse ou l'extraction du code sont strictement interdites sous peine de poursuites civiles et criminelles.</li>
-        </ul>
-
-        <h2>2. EXONÉRATION TOTALE DE RESPONSABILITÉ (SANTÉ, VIE ET FINANCES)</h2>
-        <p class="clause-title">AVERTISSEMENT : RISQUE DE VIE ET SANTÉ</p>
-        <p>Le Développeur n'assume aucune responsabilité civile ou légale pour les accidents de travail, les dommages physiques ou le <strong>DÉCÈS</strong> des utilisateurs lors de tâches coordonnées via l'App.</p>
-        <p><strong>Risque Financier :</strong> Aucune responsabilité pour les erreurs de calcul de loyers, dépenses ou décisions administratives basées sur les données du système.</p>
-
-        <h2>3. POLITIQUE DE CONFIDENTIALITÉ (LOI 25 QUÉBEC & LPRPDE)</h2>
-        <p>Conformément à la Loi 25, la Coopérative agit à titre de <strong>Responsable du traitement</strong> des données. L'App ne demande aucune information personnelle directement au développeur. </p>
-        <p><strong>Données Latentes :</strong> Si l'utilisateur saisit des données sensibles (NAS, infos bancaires) dans des champs libres, il le fait à ses propres risques. Le développeur décline toute responsabilité pour le vol d'identité résultant d'un usage inapproprié.</p>
-
-        <h2>4. JURIDICTION ET DROIT APPLICABLE</h2>
-        <p>Ces conditions sont régies par les lois de la province de <strong>Québec</strong> et les lois fédérales du Canada. Tout litige sera résolu exclusivement devant les tribunaux du district de <strong>Montréal, Québec</strong>.</p>
-    </section>
-
-    <hr style="margin: 60px 0;">
-
-    <section id="english">
-        <h1>PRIVACY NOTICE AND BINDING TERMS (GLOBAL)</h1>
-        <p><strong>Last Updated:</strong> December 18, 2025</p>
-
-        <div class="legal-header" style="background: #2c3e50;">
-            <h1>LEGAL NOTICE OF BINDING ACCEPTANCE</h1>
-            <p style="margin-top:10px; font-size: 0.9em;">
-                Use of this application and clicking the "Accept" button constitutes irrevocable, voluntary, and binding acceptance of all clauses.
-            </p>
+        <div>
+            <p>The CooApp application, source code, P2P architecture, SQLite logic, and algorithms are the <strong>exclusive and perpetual property of the Developer</strong>.</p>
+            <ul>
+                <li><strong>Trade Secret:</strong> Data structure is a protected trade secret.</li>
+                <li><strong>Prohibitions:</strong> Reverse engineering, copying, or code extraction is strictly forbidden and subject to criminal prosecution.</li>
+            </ul>
         </div>
+    </div>
 
-        <h2>1. INTELLECTUAL PROPERTY AND CODE PROTECTION</h2>
-        <p>The CooApp application, including but not limited to its source code, P2P architecture, and algorithms, is the exclusive property of the Developer.</p>
-        <ul>
-            <li><strong>Trade Secret:</strong> Database structure and sync logic are Trade Secrets.</li>
-            <li><strong>Prohibitions:</strong> Reverse engineering or attempting to extract source code is strictly forbidden.</li>
-        </ul>
+    <h2 class="clause-warning">2. EXONÉRATION DE RESPONSABILITÉ ABSOLUE / FULL LIABILITY DISCLAIMER</h2>
+    <div class="bilingual-grid">
+        <div>
+            <h3>SANTÉ ET VIE (DÉCÈS)</h3>
+            <p>Le Développeur décline toute responsabilité pour les accidents, blessures physiques ou le <strong>DÉCÈS</strong> des membres lors de tâches coordonnées par l'App.</p>
+            <h3>FINANCES ET ERREURS</h3>
+            <p>Aucune responsabilité pour les erreurs de calcul de loyer, dépenses, paie ou décisions administratives erronées.</p>
+            <h3>VOL D'IDENTITÉ ET DONNÉES LATENTES</h3>
+            <p>Zéro responsabilité si l'utilisateur saisit des informations sensibles (NAS, mots de passe) dans des champs libres. L'utilisateur assume 100% du risque d'usurpation d'identité.</p>
+        </div>
+        <div>
+            <h3>HEALTH AND LIFE (DEATH)</h3>
+            <p>The Developer assumes zero liability for accidents, physical injuries, or <strong>DEATH</strong> occurring during tasks coordinated via the App.</p>
+            <h3>FINANCIAL AND ERRORS</h3>
+            <p>No responsibility for miscalculations in rent, expenses, payroll, or faulty administrative decisions.</p>
+            <h3>IDENTITY THEFT AND LATENT DATA</h3>
+            <p>Zero liability if the user inputs sensitive info (SSN, passwords) into free-text fields. User assumes 100% risk of identity theft.</p>
+        </div>
+    </div>
 
-        <h2>2. FULL LIABILITY DISCLAIMER (HEALTH, LIFE & FINANCIAL)</h2>
-        <p class="clause-title">LIFE AND PHYSICAL RISK DISCLAIMER</p>
-        <p>The Developer has zero legal or civil responsibility for work accidents, physical harm, or <strong>DEATH</strong> during tasks coordinated via the App. Users assume 100% risk.</p>
-
-        <h2>3. DATA CATEGORIES AND COMPLIANCE (GDPR/USA/CANADA)</h2>
-        <table>
+    <h2>3. CONFORMITÉ DES DONNÉES / DATA COMPLIANCE (GDPR, CCPA, LOI 25)</h2>
+    <table>
+        <thead>
             <tr>
-                <th>Category</th>
-                <th>Collected by App</th>
-                <th>Legal Basis</th>
+                <th>Category / Catégorie</th>
+                <th>Collected / Collecté</th>
+                <th>Legal Basis / Base Légale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Identifiers (Name, Unit) / Identifiants</td>
+                <td>YES (Local P2P only)</td>
+                <td>Contractual / Contractuel</td>
             </tr>
             <tr>
-                <td>Identifiers (Name, Unit)</td>
-                <td>YES (Stored Locally)</td>
-                <td>Contract/Service</td>
-            </tr>
-            <tr>
-                <td>Sensitive Info (SSN, Health)</td>
-                <td>NO</td>
+                <td>Sensitive Info / Données Sensibles</td>
+                <td>NO / NON</td>
                 <td>N/A</td>
             </tr>
             <tr>
-                <td>Financial Records</td>
-                <td>Optional (Latent)</td>
-                <td>User Risk</td>
+                <td>Latent Data (User inputs) / Données Latentes</td>
+                <td>USER RISK / RISQUE UTILISATEUR</td>
+                <td>Consent / Consentement</td>
             </tr>
-        </table>
+            <tr>
+                <td>Financial Records / Dossiers Financiers</td>
+                <td>Local (Optional Backup)</td>
+                <td>Business Operation</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h2>4. HYBRID MODEL AND BILLING</h2>
-        <p><strong>Basic:</strong> P2P sync is free. <br>
-        <strong>Premium:</strong> Backup, Audit, and Advanced Reports are paid modules. Suspension of Premium features occurs immediately upon non-payment.</p>
+    <div class="bilingual-grid">
+        <div>
+            <h3>QUEBEC (LOI 25)</h3>
+            <p>La Coopérative est le "Responsable du traitement". Le développeur n'accède aux données que via le module de sauvegarde premium.</p>
+        </div>
+        <div>
+            <h3>QUEBEC (LAW 25)</h3>
+            <p>The Cooperative is the "Data Controller". The developer only accesses data through the premium backup module.</p>
+        </div>
+    </div>
 
-        <h2>5. JURISDICTION</h2>
-        <p>Governing Law: Province of <strong>Quebec</strong> and Federal Laws of Canada. Venue: <strong>Montreal</strong> Courts only.</p>
+    <h2>4. MODÈLE HYBRIDE ET DROIT DE MODIFICATION / HYBRID MODEL & MODIFICATION RIGHTS</h2>
+    <div class="bilingual-grid">
+        <div>
+            <p><strong>Droit de Modification:</strong> Le développeur peut modifier ces termes à tout moment. L'usage continu constitue une acceptation.</p>
+            <p><strong>Premium:</strong> Les fonctions de sauvegarde et rapports avancés sont payantes. Le non-paiement suspend l'accès.</p>
+        </div>
+        <div>
+            <p><strong>Right to Modify:</strong> Developer may modify these terms at any time. Continued use constitutes acceptance.</p>
+            <p><strong>Premium:</strong> Backup and advanced reporting are paid modules. Non-payment suspends access immediately.</p>
+        </div>
+    </div>
 
-        <h2>6. RIGHT TO UNILATERAL MODIFICATION</h2>
-        <p>The Developer reserves the <strong>Droit de Modification</strong>: terms may be updated at any time. Continued use constitutes acceptance of new terms.</p>
-    </section>
+    <h2>5. JURIDICTION (MONTREAL, QUEBEC)</h2>
+    <div class="bilingual-grid">
+        <div>
+            <p>Tout litige sera résolu exclusivement devant les tribunaux de <strong>Montréal, Québec, Canada</strong>, selon les lois du Québec.</p>
+        </div>
+        <div>
+            <p>Any dispute shall be resolved exclusively in the courts of <strong>Montreal, Quebec, Canada</strong>, under the laws of Quebec.</p>
+        </div>
+    </div>
 
     <footer>
-        © 2025 CooApp Development - Montreal, Quebec. <br>
-        Contact: iamreading4u@gmail.com <br>
-        <strong>By clicking "Accept" or using this App, you confirm you have read and agreed to these terms.</strong>
+        © 2025 CooApp Development. <br>
+        BY CLICKING ACCEPT OR USING THIS APP, YOU ARE BOUND BY THESE TERMS. <br>
+        EN CLIQUANT SUR ACCEPTER OU EN UTILISANT CETTE APP, VOUS ÊTES LIÉ PAR CES TERMES.
     </footer>
-</div>
 
 </body>
 </html>
