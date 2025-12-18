@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Privacy - CooApp</title>
+    <title>Feuille de Temps & Confidentialité - CooApp</title>
     <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #222; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f9; }
         .container { background-color: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
@@ -13,70 +13,81 @@
         h1 { color: #1a202c; border-bottom: 3px solid #3182ce; padding-bottom: 10px; }
         h2 { color: #2d3748; margin-top: 40px; border-left: 5px solid #3182ce; padding-left: 15px; text-transform: uppercase; font-size: 1.1em; background: #f8fafc; padding: 5px 15px; }
         .warning { font-weight: bold; color: #c53030; background-color: #fff5f5; padding: 15px; border: 1px dashed #c53030; border-radius: 4px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #cbd5e0; padding: 10px; text-align: center; }
+        th { background-color: #edf2f7; }
         .footer { margin-top: 60px; font-size: 0.85em; color: #a0aec0; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 25px; }
-        hr { border: 0; height: 2px; background: #3182ce; margin: 60px 0; }
-        section { display: block; }
+        form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+        input, select, button { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e0; font-size: 1em; }
+        button { background-color: #3182ce; color: #fff; border: none; cursor: pointer; }
+        button:hover { background-color: #2c5282; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="lang-switch">
-        JUMP TO: 
-        <a href="#fr">FRANÇAIS</a> | 
+        JUMP TO:  
+        <a href="#fr">FRANÇAIS</a> |  
         <a href="#en">ENGLISH</a>
     </div>
 
     <section id="fr">
         <h1>Conditions de Service et Confidentialité</h1>
         <p><strong>Version 1.0 — Dernière mise à jour : 18 déc. 2025 (Montréal, Québec)</strong></p>
-        
+
         <div class="warning">
-            AVIS JURIDIQUE CRITIQUE : L'utilisation de cette application constitue une acceptation irrévocable et contraignante de ces termes. Le développeur n'assume aucune responsabilité juridique ou civile en cas d'accident, de blessure ou de DÉCÈS (mort) d'utilisateurs survenu lors de l'exécution de tâches coordonnées ou enregistrées via l'Application.
+            AVIS JURIDIQUE : L'utilisation de cette application constitue une acceptation irrévocable de ces termes. Le développeur n'assume aucune responsabilité en cas d'accident, de blessure ou de décès.
         </div>
 
-        <h2>1. PROPRIÉTÉ INTELLECTUELLE ET PROTECTION DU CODE</h2>
-        <p>L'Application CooApp, y compris son code source, ses algorithmes de synchronisation P2P et sa logique SQLite, est la propriété exclusive et perpétuelle du Développeur.</p>
-        <ul>
-            <li><strong>Secret Commercial :</strong> La structure de la base de données et la logique de synchronisation sont considérées comme un Secret Commercial.</li>
-            <li><strong>Interdictions :</strong> Il est strictement interdit de copier, modifier, distribuer, désosser (reverse engineering) ou tenter d'extraire le code source. Toute violation fera l'objet de poursuites judiciaires.</li>
-        </ul>
+        <h2>1. PROPRIÉTÉ INTELLECTUELLE</h2>
+        <p>L'application CooApp (code source, algorithmes P2P, structure SQLite) est la propriété exclusive du Développeur. Il s'agit d'un secret commercial protégé.</p>
 
-        <h2>2. EXCLUSION DE RESPONSABILITÉ FINANCIÈRE ET TECHNIQUE</h2>
-        <p>Le développeur n'est pas responsable des erreurs de calcul financier, des décisions de la coopérative ni de la perte de données due à une défaillance du matériel de l'utilisateur. L'utilisation se fait à vos propres risques.</p>
-        
+        <h2>2. EXCLUSION DE RESPONSABILITÉ</h2>
+        <p>Le développeur n'est pas responsable des décisions financières de la coopérative ni de la sécurité physique des membres. L'utilisation se fait à vos propres risques.</p>
+
         <h2>3. MODÈLE PREMIUM ET PAIEMENT</h2>
-        <p>La synchronisation P2P de base est gratuite. Les fonctions de sauvegarde centralisée, de rapports avancés et d'audit sont des modules <strong>Premium</strong> payants. Le défaut de paiement entraînera la suspension immédiate de ces ressources.</p>
-        
-        <h2>4. DROIT DE MODIFICATION UNILATÉRALE</h2>
-        <p>Le Développeur se réserve le droit de modifier ces Termes et l'Application à tout moment. L'utilisation continue constitue l'acceptation automatique des nouvelles conditions.</p>
-    </section>
+        <p>La synchronisation P2P de base est gratuite. Les fonctions de sauvegarde, de rapports et d'audit sont des modules Premium payants.</p>
 
-    <hr>
+        <h2>4. FEUILLE DE TEMPS</h2>
+        <form id="timesheetFormFR">
+            <label for="memberCodeFR">Code du Membre</label>
+            <input type="text" id="memberCodeFR" required>
 
-    <section id="en">
-        <h1>Terms of Service & Privacy Policy</h1>
-        <p><strong>Version 1.0 — Last Updated: Dec 18, 2025 (Montreal, Quebec)</strong></p>
+            <label for="activityFR">Activité</label>
+            <input type="text" id="activityFR" required>
 
-        <div class="warning">
-            CRITICAL LEGAL NOTICE: Continued use of this App constitutes binding and irrevocable acceptance of these terms. The Developer holds ZERO legal or civil liability for workplace accidents, bodily injury, or DEATH occurring during tasks coordinated or recorded via the App.
-        </div>
+            <label for="hoursFR">Heures de Travail</label>
+            <input type="number" id="hoursFR" min="0" step="0.1" required>
 
-        <h2>1. INTELLECTUAL PROPERTY & CODE PROTECTION</h2>
-        <p>CooApp, including its source code, P2P algorithms, and SQLite logic, is the exclusive and perpetual property of the Developer.</p>
-        <ul>
-            <li><strong>Trade Secret:</strong> Database structure and synchronization logic are considered Trade Secrets.</li>
-            <li><strong>Prohibitions:</strong> Copying, modifying, distributing, reverse engineering, or attempting to extract source code is strictly prohibited. Unauthorized use will result in legal action.</li>
-        </ul>
+            <label for="departmentFR">Département (fonction ou comité, ex. : CGI)</label>
+            <input type="text" id="departmentFR" required>
 
-        <h2>2. FINANCIAL AND TECHNICAL LIMITATION OF LIABILITY</h2>
-        <p>The Developer is not liable for financial calculation errors, administrative disputes, or data loss due to user hardware failure. Use of the app is at your own risk.</p>
+            <label for="dateFR">Sélection de la Date</label>
+            <input type="date" id="dateFR" required>
 
-        <h2>3. PREMIUM MODULES AND BILLING</h2>
-        <p>Basic P2P sync is free. Centralized Backup, Audit logs, and Advanced Reports are paid <strong>Premium</strong> modules. Failure to pay will result in immediate suspension of these features.</p>
+            <button type="submit">Ajouter un Enregistrement</button>
+        </form>
 
-        <h2>4. UNILATERAL MODIFICATION RIGHTS</h2>
-        <p>The Developer reserves the right to modify these Terms and the App at any time. Continued use of the App constitutes automatic acceptance of any updates.</p>
+        <table id="recordsTableFR">
+            <thead>
+                <tr>
+                    <th>Code du Membre</th>
+                    <th>Activité</th>
+                    <th>Heures</th>
+                    <th>Département</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Temps Total du Mois</th>
+                    <th id="totalHoursFR">0</th>
+                    <th colspan="2"></th>
+                </tr>
+            </tfoot>
+        </table>
     </section>
 
     <div class="footer">
@@ -84,6 +95,30 @@
         Governing Law: District of Montreal.
     </div>
 </div>
+
+<script>
+    const formFR = document.getElementById('timesheetFormFR');
+    const tableBodyFR = document.querySelector('#recordsTableFR tbody');
+    const totalHoursElementFR = document.getElementById('totalHoursFR');
+    let totalHoursFR = 0;
+
+    formFR.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const memberCode = document.getElementById('memberCodeFR').value;
+        const activity = document.getElementById('activityFR').value;
+        const hours = parseFloat(document.getElementById('hoursFR').value);
+        const department = document.getElementById('departmentFR').value;
+        const date = document.getElementById('dateFR').value;
+
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${memberCode}</td><td>${activity}</td><td>${hours}</td><td>${department}</td><td>${date}</td>`;
+        tableBodyFR.appendChild(row);
+
+        totalHoursFR += hours;
+        totalHoursElementFR.textContent = totalHoursFR.toFixed(1);
+        formFR.reset();
+    });
+</script>
 
 </body>
 </html>
